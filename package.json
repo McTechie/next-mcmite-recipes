@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "author": "mcvean soans",
   "dependencies": {
+    "contentful": "^8.3.1",
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1"
