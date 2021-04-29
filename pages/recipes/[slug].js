@@ -50,7 +50,7 @@ export default function RecipeDetails({ recipe }) {
         <h2>{title}</h2>
       </div>
       <div className="info">
-        <p>Takes about {cookingTime} mins to cook.</p>
+        <p>Takes about {cookingTime} mins to cook!</p>
         <h3>Ingredients:</h3>
         {ingredients.map(ingredient => (
           <span key={ingredient}>{ingredient}</span>
@@ -78,13 +78,25 @@ export default function RecipeDetails({ recipe }) {
         }
         .info p {
           margin: 0;
-          color: #921616;
+          color: #B91C1C;
+          background: #fff;
+          display: inline-block;
+          padding: 20px;
+          position: relative;
+          top: -63px;
+          left: -10px;
+          transform: rotateZ(2deg);
+          box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
         }
         .info span::after {
           content: ", ";
         }
         .info span:last-child::after {
           content: ".";
+        }
+        .info > h3, span {
+          position: relative;
+          top: -20px;
         }
         h3 {
           color: #921616;
