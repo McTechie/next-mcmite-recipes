@@ -10,7 +10,7 @@ export default function Layout({ children }) {
               <span>Just Add</span>
               <span>Mcmite</span>
             </h1>
-            <h2>Spread The Joy</h2>
+            <h2 className="tagline">Spread The Joy</h2>
           </a>
         </Link>
       </header>
