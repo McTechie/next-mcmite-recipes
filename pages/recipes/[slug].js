@@ -117,6 +117,14 @@ export default function RecipeDetails({ recipe }) {
           word-wrap: break-word;
           text-align: justify;
         }
+        @media screen and (max-width: 768px) {
+          .banner h2 {
+            font-size: 0.8em;
+          }
+          .info, .method {
+            font-size: 0.7em;
+          }
+        }
       `}</style>
     </div>
   )

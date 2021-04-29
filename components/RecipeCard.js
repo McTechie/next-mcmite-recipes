@@ -61,6 +61,20 @@ const RecipeCard = ({ recipe }) => {
                     padding: 16px 24px;
                     text-decoration: none;
                 }
+                @media screen and (max-width: 768px) {
+                    .info {
+                        padding: 10px;
+                    }
+                    .actions {
+                        margin-top: 0;
+                    }
+                    .actions a {
+                        padding: 10px 18px;
+                    }
+                    .info, .actions {
+                        font-size: 0.6em;
+                    }
+                }
           `}</style>
         </div>
     );
